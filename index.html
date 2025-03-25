@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GIF Application</title>
+</head>
+<body>
+    <main>
+          
+        <div class="hehe" id="nav">
+            <a href="#">GIFFY</a>  
+            <div style="float:right" class="dropdown" >
+                <button type="button" class="dropbtn" >   <img class="icon" src="person.png" alt="">   </button>
+                <div class="dropdown-content" id="signup">
+                    <a class="hehe" href="#">Log Out</a>
+                    <a class="hehe"  href="#">Settings</a>
+                    <a class="hehe" href="#">Your GIFs</a>
+                    <a class="hehe" href="fav.html">Favourites</a>
+                    
+                </div>
+            </div>
+            <div style="float:right" class="dropdown" >
+                <button type="button" class="dropbtn" >Categories</button>
+                <div class="dropdown-content" id="categories">
+                    <a class="hehe" href="#">Entertainment</a>
+                    <a class="hehe" href="#">Sports</a>
+                    <a class="hehe" href="#">Food</a>
+                    <a class="hehe" href="#">Emotions</a>
+                    <a class="hehe" href="#">Cartoon</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="search-bar">
+            <form action="" id="gif-form">
+                <input id="gif-input" type="text" placeholder="Search GIFs">
+                
+                <label for="rating"></label>
+                <select id="rating">
+                    <option value="">Select Rating</option>
+                    <option value="g">G</option>
+                    <option value="pg">PG</option>
+                    <option value="pg-13">PG-13</option>
+                    <option value="r">R</option>
+                </select>
+        
+                <label for="category"></label>
+                <select id="category">
+                    <option value="">Select Category</option>
+                    <option value="funny">Funny</option>
+                    <option value="animals">Animals</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="movies">Movies</option>
+                </select>
+                
+                <button id="gif-button" type="submit">
+                    <img class="icon" src="search.png" alt="Search">
+                </button>
+            </form>
+        </div>
+        
+        
+
+        <section>
+            <div class="view-image">
+                <img src="" alt="" id="full-image">
+                <button class="close-btn">X</button>
+                <!-- <div id="gif-url-link"></div> -->
+                <div class="container">
+                    <a id="gif-url-link" href="#" target="_blank"></a>
+                    <!-- <img class="sm-img" src="fb.png" alt="">
+                    <img class="sm-img" src="instaa.png" alt=""> -->
+                </div>
+            </div>
+
+            <div class="gif-container">  </div>
+                
+            
+            
+            <div id="gif-details-hover"></div>
+        </section>
+            
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
